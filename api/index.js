@@ -1,4 +1,2 @@
-app.listen(PORT, () => {
-  console.log(`Books API listening on port ${PORT}`);
-  console.log(`books.json location: ${BOOKS_FILE}`);
-});
+const app = require("../index");
+module.exports = (req, res) => app(req, res);
