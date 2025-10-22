@@ -3,11 +3,11 @@ const app = express();
 
 // Sample data
 const BookStore = [
-  { id: 1, name: "Harry Potter", author: "J.K Rawling" },
-  { id: 2, name: "Rich Dad Poor Dad", author: "Robert Kiyosaki" },
-  { id: 3, name: "Physcilogy of Money", author: "N/A" },
-  { id: 4, name: "October Junction", author: "Prakash" },
-  { id: 5, name: "Musafir Cafe", author: "Prakash" }
+  { id: 1, name: "How Lonely I Am", author:"Dilbagh Musafir" },
+  { id: 2, name: "Mai Jise Sochta Hun", author: "D Musafir" },
+  { id: 3, name: "Wo Jo Mere Khawab The", author: "V Kumar" },
+  { id: 4, name: "Gaun Chhuta", author: "V Sher Sah" },
+  { id: 5, name: "How Do I Explain Her", author: "Psycho MrX" }
 ];
 
 // Middleware
@@ -45,7 +45,7 @@ app.post("/book", (req, res) => {
 
 
 app.use("/", (req, res)=>{
-    res.send("This is BookStore Dashboard. for getting all the Books goto /book.\n if you want specifc book /book/id ( id=1,2,3,4).\n you can add the book also /book route only but you need to use Post method");
+    res.send("BookStore");
 })
 
 
